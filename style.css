@@ -87,13 +87,49 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
 }
+
+.ex-9-img:hover{
+    border-radius: 15px;
+    filter: invert(2) brightness(80%);
+    width: 500px;
+    margin: 25px 40px;
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation-name: infinity-spin;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes infinity-spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes spin {
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+        animation-duration: 0.5s;
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
