@@ -93,8 +93,7 @@
 .ex-9-img:hover{
     border-radius: 15px;
     filter: invert(2) brightness(80%);
-    width: 500px;
-    margin: 25px 50px;
+    transform: scale(1.5);
 }
 
 .ex-10-icon {
@@ -232,3 +231,4 @@
         bottom: 64px;
     }
 } */
+
