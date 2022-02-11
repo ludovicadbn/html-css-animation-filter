@@ -93,7 +93,8 @@
 .ex-9-img:hover{
     border-radius: 15px;
     filter: invert(2) brightness(80%);
-    transform: scale(1);
+    width: 500px;
+    margin: 25px 50px;
 }
 
 .ex-10-icon {
@@ -159,7 +160,7 @@
     height: 20px;
 }
 
-.ex-12-top-white, .ex-12-bottom-white, .ex-13-top-white, .ex-13-bottom-white{
+.ex-12-top-white, .ex-12-bottom-white{
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -173,8 +174,19 @@
     animation-name: movement-left-bottom;
 }
 
+.ex-13-top-white, .ex-13-bottom-white{
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-timing-function: linear;
+}
+
 .ex-13-top-white{
     animation-name: spin-top;
+}
+
+.ex-13-bottom-white{
+    animation-name: spin-bottom;
 }
 
 @keyframes movement-right-top {
@@ -197,6 +209,26 @@
     }
 }
 
-@keyframes spin-top{
-    
+/* @keyframes spin-top{
+    25%{
+        width: 80px;
+        left: 100%;
+  
+    }
+
+    100%{
+        top: 64px;
+    }
 }
+
+@keyframes spin-bottom{
+    25%{
+        width: 80px;
+        right: 100%;
+  
+    }
+
+    100%{
+        bottom: 64px;
+    }
+} */
